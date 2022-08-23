@@ -5,7 +5,12 @@ function getAllDirectors(moviesArray) {
     return moviesArray.map(elm => elm.director)
 }
 
+let allDirectorsArr = getAllDirectors(movies);
 
+function cleanMultipleDirectorName (allDirectorsArr) {
+    let directorsNameFiltered = [...new Set(allDirectorsArr)]
+    return directorsNameFiltered
+}
 // Iteration 2: Steven Spielberg. The best? - How many drama movies did STEVEN SPIELBERG direct?
 function howManyMovies(moviesArray) {}
 
